@@ -1,2 +1,23 @@
 # vite-scaffold-template
-for vite template
+
+基于 vite 的项目模板
+
+集成项目必备的基建
+
+> 开箱即用
+
+## Feature
+
+- ts
+- vuex
+- vue-router
+- e2e
+  - cypress
+- test unit
+  - jest + vtu
+- eslint + prettier
+- git commit check
+
+
+## Todo
+- [ ] CI/CD
