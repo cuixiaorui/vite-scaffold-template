@@ -13,7 +13,9 @@
     "vue-router": "^4.0.4",
     "vuex": "^4.0.0"
   },
-  "gitHooks": {},
+  "gitHooks": {
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.17",
     "@babel/preset-env": "^7.12.17",
