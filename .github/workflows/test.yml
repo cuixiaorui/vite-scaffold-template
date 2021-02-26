@@ -11,5 +11,9 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Unit Tests
         run: yarn test:unit
-      - name: E2E tests
-        run: yarn test:e2e:ci
+      - name: Cypress run
+        uses: cypress-io/github-action@v1
+        with:
+          build: yarn build
+          start: yarn serve
+          wait-on: http://localhost:3000
