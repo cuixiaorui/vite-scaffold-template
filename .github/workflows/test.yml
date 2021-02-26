@@ -12,8 +12,7 @@ jobs:
       - name: Unit Tests
         run: yarn test:unit
       - name: Cypress run
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v2
         with:
-          build: yarn build
-          start: yarn serve
-          wait-on: http://localhost:5000
+          start: yarn dev
+          wait-on: http://localhost:3000
