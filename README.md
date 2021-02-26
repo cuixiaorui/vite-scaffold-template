@@ -17,7 +17,4 @@
   - jest + vtu
 - eslint + prettier
 - git commit check
-
-
-## Todo
-- [ ] CI/CD
+- CI

@@ -35,7 +35,6 @@
     "prettier": "^2.2.1",
     "ts-jest": "^26.5.1",
     "typescript": "^4.1.5",
-    "validate-commit-msg": "^2.14.0",
     "vite": "^2.0.1",
     "vue-jest": "vuejs/vue-jest#next",
     "yorkie": "^2.0.0"
