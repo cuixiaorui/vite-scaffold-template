@@ -1,0 +1,8 @@
+{
+  "volar.tsPlugin": true,
+  "vetur.validation.interpolation": false,
+  "vetur.validation.script": false,
+  "vetur.validation.style": false,
+  "vetur.validation.template": false,
+  "vetur.validation.templateProps": false
+}
