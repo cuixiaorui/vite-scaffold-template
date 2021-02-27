@@ -9,9 +9,11 @@ jobs:
       - uses: actions/checkout@v1
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
-      - name: Unit Tests
+      - name: Run Lint
+        run: yarn lint
+      - name: Run Unit Tests
         run: yarn test:unit
-      - name: Cypress run
+      - name: Run E2E Test
         uses: cypress-io/github-action@v2
         with:
           start: yarn dev

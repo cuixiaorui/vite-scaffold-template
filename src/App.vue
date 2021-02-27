@@ -1,15 +1,19 @@
 <template>
   <div>
     router-view
+    <Foo></Foo>
     <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Foo from '@/components/Foo.vue'
 export default defineComponent({
   name: 'App',
-  components: {},
+  components: {
+    Foo,
+  },
 })
 </script>
 
