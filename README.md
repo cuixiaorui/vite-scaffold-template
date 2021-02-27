@@ -16,5 +16,6 @@
 - test unit
   - jest + vtu
 - eslint + prettier
-- git commit check
+- verify git commit message
 - CI
+- alias
