@@ -5,8 +5,10 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "test:unit": "jest",
-    "test:e2e": "cypress open",
+    "test-unit": "jest",
+    "test-e2e": "cypress open",
+    "test-e2e-ci": "cypress run",
+    "test": "yarn test-unit && yarn test-e2e-ci",
     "lint": "eslint --ext .ts,vue src/** --no-error-on-unmatched-pattern"
   },
   "dependencies": {
