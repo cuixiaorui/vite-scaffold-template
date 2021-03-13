@@ -14,7 +14,7 @@
 - e2e
   - cypress
 - test unit
-  - jest + vtu
+  - jest + vtu + @testing-library/vue
 - eslint + prettier
 - verify git commit message
 - CI
