@@ -6,5 +6,9 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest', // Adding this line solved the issue
     '^.+\\.tsx?$': 'ts-jest',
   },
+  // support alias
+  moduleNameMapper: {
+    '^@/components(.*)$': '<rootDir>/src/components$1',
+  },
   testMatch: ['**/tests/unit/**/*.[jt]s?(x)'],
 }

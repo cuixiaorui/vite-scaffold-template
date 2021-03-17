@@ -1,5 +1,7 @@
-import Foo from '../../src/components/Foo.vue'
-it('1+1', () => {
-  console.log(Foo)
-  expect(2).toBe(2)
+// import Foo from '../../src/components/Foo.vue'
+import Foo from '@/components/Foo.vue'
+import { render } from '@testing-library/vue'
+it('snapshot', () => {
+  const { container } = render(Foo)
+  expect(container).toMatchSnapshot()
 })
