@@ -4,6 +4,12 @@ exports[`snapshot 1`] = `
 <div>
   <div>
      foo ----------------- 
+    <button>
+      login
+    </button>
+    <button>
+      get user
+    </button>
     <div>
       bar
     </div>

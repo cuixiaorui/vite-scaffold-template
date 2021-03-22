@@ -8,7 +8,7 @@ module.exports = {
   },
   // support alias
   moduleNameMapper: {
-    '^@/components(.*)$': '<rootDir>/src/components$1',
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
   testMatch: ['**/tests/unit/**/*.[jt]s?(x)'],
 }
