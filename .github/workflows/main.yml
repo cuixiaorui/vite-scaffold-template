@@ -12,7 +12,7 @@ jobs:
       - name: Run Lint
         run: yarn lint
       - name: Run Unit Tests
-        run: yarn test:unit
+        run: yarn test-unit
       - name: Run E2E Test
         uses: cypress-io/github-action@v2
         with:
