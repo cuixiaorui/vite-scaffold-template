@@ -16,9 +16,34 @@
  * @type {Cypress.PluginConfig}
  */
 
-export default (on, config) => {
+// import { startDevServer } from '@cypress/vite-dev-server'
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { startDevServer } = require('@cypress/vite-dev-server')
+
+export default (
+  on: (arg0: string, arg1: (options: any) => any) => void,
+  config: any,
+) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+
+  const viteConfig: any = {
+    plugins: [],
+  }
+
+  viteConfig.esbuild = viteConfig.esbuild || {}
+  viteConfig.esbuild.jsxFactory = 'h'
+  viteConfig.esbuild.jsxFragment = 'Fragment'
+  viteConfig.logLevel = 'error'
+  viteConfig.resolve = {
+    alias: {
+      vue: 'vue/dist/vue.esm-bundler.js',
+    },
+  }
+
+  on('dev-server:start', (options: any) => {
+    return startDevServer({ options, viteConfig })
+  })
 
   return Object.assign({}, config, {
     fixturesFolder: 'tests/e2e/fixtures',
