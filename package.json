@@ -9,7 +9,8 @@
     "test-e2e": "cypress open",
     "test-e2e-ci": "cypress run",
     "test-ct": "cypress open-ct",
-    "test": "yarn test-unit && yarn test-e2e-ci",
+    "test-ct-ci": "cypress run-ct",
+    "test": "yarn test-unit && yarn test-ct-ci && yarn test-e2e-ci",
     "lint": "eslint --ext .ts,vue src/** --no-error-on-unmatched-pattern"
   },
   "dependencies": {
