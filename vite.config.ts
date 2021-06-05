@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-import { join } from 'path'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
@@ -8,9 +7,11 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '@/',
-        replacement: join(__dirname, 'src/'),
+        find: '@',
+        replacement: '/src',
       },
+      { find: 'views', replacement: '/src/views' },
+      { find: 'components', replacement: '/src/components' },
     ],
   },
 })
